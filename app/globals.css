@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 4px #fff) drop-shadow(0 0 6px #fff);
+  }
+  50% {
+    filter: drop-shadow(0 0 4px #174569) drop-shadow(0 0 8px #33126f) drop-shadow(0 0 12px #3c036a);
+  }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+
+
+/* Custom NFT Card Style */
+.card-gradient {
+  position: relative;
+  border-radius: 16px;
+  padding: 1px; /* to create the glowing border effect */
+  background: linear-gradient(135deg, #8f00ff, #00e0ff);
+  mask-image: linear-gradient(to bottom right, black 98%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom right, black 98%, transparent 100%);
+}
+.card-inner {
+  background-color: #0f172a;
+  border-radius: 14px;
+  padding: 24px;
+}
