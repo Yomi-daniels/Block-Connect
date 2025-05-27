@@ -135,7 +135,7 @@ const filteredCoins = coins.filter((coin) =>
           <p className="text-gray-400 text-center text-lg">No coins found matching "{search}".</p>
         ) : (
           <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">
               {visibleCoins.map((coin) => (
                  <CoinCard key={coin.id} coin={coin} currency={currency} />
               ))}

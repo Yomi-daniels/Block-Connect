@@ -4,12 +4,12 @@ import React, { useEffect } from 'react';
 const ConnectBtn = () => {
   const { setThemeVariables } = useAppKitTheme();
 
-  useEffect(() => {
-    setThemeVariables({
-      '--w3m-accent': '#15bffd',
+  // useEffect(() => {
+  //   setThemeVariables({
+  //     '--w3m-accent': '#15bffd',
     
-    });
-  }, [setThemeVariables]);
+  //   });
+  // }, [setThemeVariables]);
 
   return <w3m-button />;
 };
