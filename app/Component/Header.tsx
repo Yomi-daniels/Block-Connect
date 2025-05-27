@@ -59,7 +59,7 @@ export default function Header() {
               priority
             />
             <a href="#home" className="text-2xl font-bold select-none">
-              BLOCK <span className="text-primary">CONNECT</span>
+              {/* BLOCK <span className="text-primary">CONNECT</span> */}
             </a>
           </div>
 
