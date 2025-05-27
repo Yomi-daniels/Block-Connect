@@ -43,7 +43,7 @@ export default function Header() {
     <div className="h-full flex flex-col bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
       <header
         id="navbar"
-        className={`fixed top-0 left-0 w-full h-[100px] z-[10000] duration-300 ${
+        className={`fixed top-0 left-0 w-full h-[100px] z-50 duration-300 ${
           isScrolled
             ? "bg-[rgba(0,0,0,0.5)] shadow-lg dark:bg-[rgba(0,0,0,0.8)]"
             : "bg-transparent"

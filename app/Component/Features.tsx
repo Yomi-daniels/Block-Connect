@@ -29,7 +29,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="relative w-full h-full px-6 text-white overflow-hidden">
+    <section className="relative w-full h-full px-6 text-white overflow-hidden py-7">
       {/* Radial gradient left */}
       <div className="absolute top-0 left-[-10%] w-[400px] h-[400px] bg-[#15bffd] opacity-30 blur-3xl rounded-full -z-10 transform -translate-y-1/2" />
 

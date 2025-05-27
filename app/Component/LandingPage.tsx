@@ -80,7 +80,7 @@ export default function LandingPage() {
         </div>
 
         {/* Right side: Image */}
-        <div className="absolute right-[-14em] top-0 max-w-md mx-auto md:mx-0 max-sm:-z-10">
+        <div className="absolute right-[-14em] top-0 max-w-md mx-auto md:mx-0 max-sm:-z-10 max-sm:right-[-8em] max-sm:blur-sm">
           <Image
             src="/G2JLcK1G8bL67UgAtHSKmVQpDJQ.gif"
             alt="Block"
@@ -90,7 +90,7 @@ export default function LandingPage() {
         </div>
 
         {/* Left side: Image */}
-        <div className="absolute left-[2%] top-0 max-w-md mx-auto md:mx-0 rotate-[-12deg] -z-10">
+        <div className="absolute left-[2%] top-0 max-w-md mx-auto md:mx-0 rotate-[-12deg] -z-10 max-sm:blur-sm">
           <Image
             src="/Group 1261152692.png"
             alt="Block Connect Logo"
@@ -100,12 +100,11 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="landing-chart mx-auto mt-[3rem] relative">
+      <div className="landing-chart mx-auto mt-[3rem] relative w-full  h-[500px] max-sm:h-[250px]  ">
         <Image
           src="/tradingview-options-preview.png"
           alt="chart"
-          width={1300}
-          height={900}
+        fill
           objectFit="cover"
           className="rounded-md"
         />
